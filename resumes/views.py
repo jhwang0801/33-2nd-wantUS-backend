@@ -99,3 +99,5 @@ class ResumeListView(View):
         } for resume in Resume.objects.filter(user=request.user)]
 
         return JsonResponse({"result" : results}, status=200)
+
+        
